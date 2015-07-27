@@ -1,0 +1,29 @@
+<style>
+    section.filereader{
+        padding: 1em;
+        border: 1px solid gray;
+    }
+    ul{
+        margin:0;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        padding: 1em;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<section class="filereader">
+    <input type="file" multiple>
+    <div>
+        <ul>
+            <li ng-repeat="uri in datauri">
+                <img ng-src="{{uri}}">
+            </li>
+        </ul>
+    </div>
+</section>
